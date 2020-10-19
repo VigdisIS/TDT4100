@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane id="bgpane" fx:id="bgpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="330.0" style="-fx-background-image: url(&quot;/.bgpic.jpg&quot;);" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app2.AppController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="221.0" prefWidth="233.0">
+         <children>
+            <ProgressBar fx:id="hPBStatus" layoutX="37.0" layoutY="149.0" prefHeight="20.0" prefWidth="159.0" progress="0.0" styleClass="progressBar" stylesheets="@style.css" />
+            <ProgressBar fx:id="pPBStatus" layoutX="37.0" layoutY="169.0" prefHeight="20.0" prefWidth="159.0" progress="0.0" styleClass="progressBar" stylesheets="@style.css" />
+            <ProgressBar fx:id="dPBStatus" layoutX="37.0" layoutY="189.0" prefHeight="20.0" prefWidth="159.0" progress="0.0" styleClass="progressBar" stylesheets="@style.css" />
+            <Pane fx:id="petPane" layoutX="50.0" layoutY="14.0" prefHeight="129.0" prefWidth="134.0" style="-fx-background-image: url(&quot;./pet.png&quot;);" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pet.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Button fx:id="saveBtn" layoutX="-13.0" layoutY="-13.0" mnemonicParsing="false" onAction="#saveProgress" stylesheets="@style.css" text="Save" />
+         </children>
+      </Pane>
+      <Button fx:id="feedBtn" layoutX="40.0" layoutY="235.0" mnemonicParsing="false" onAction="#feedBtn" stylesheets="@style.css" text="Feed" />
+      <Button fx:id="playBtn" layoutX="95.0" layoutY="235.0" mnemonicParsing="false" onAction="#playBtn" stylesheets="@style.css" text="Play" />
+      <Button fx:id="disciplineBtn" layoutX="147.0" layoutY="235.0" mnemonicParsing="false" onAction="#disciplineBtn" stylesheets="@style.css" text="Discipline" />
+      <TextArea fx:id="statusText" layoutX="4.0" layoutY="281.0" prefHeight="110.0" prefWidth="253.0" />
+      <ProgressBar fx:id="overallProg" layoutX="105.0" layoutY="177.0" prefHeight="44.0" prefWidth="368.0" progress="0.0" rotate="-90.0" styleClass="progressBar" />
+   </children>
+</Pane>

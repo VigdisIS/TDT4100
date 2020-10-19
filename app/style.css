@@ -1,0 +1,26 @@
+#bgpane {
+  -fx-background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fappadvice.com%2Fapp%2Fpet-a-pult-pixel-challenge%2F1154457528&psig=AOvVaw3iN45Ywk5FlVtakrxmHLas&ust=1582804743629000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKiJt6eV7-cCFQAAAAAdAAAAABAD");
+}
+
+#petpane {
+  -fx-background-image: url("./petpic.png");
+}
+
+.button {
+  -fx-background-color: rgb(194, 227, 241);
+  -fx-border-color: rgb(32, 137, 179);
+  -fx-border-radius: 2;
+}
+
+.progressBar {
+  -fx-background-color: rgb(124, 212, 124);
+  -fx-border-color: rgb(163, 236, 241);
+}
+
+.button:mousedown {
+  -fx-background-color: rgb(142, 188, 207);
+}
+
+.button:hover {
+  -fx-background-color: rgb(226, 245, 253);
+}

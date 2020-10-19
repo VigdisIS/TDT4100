@@ -1,0 +1,8 @@
+Delegeringsteknikken:
+
+I delegeringsteknikken har man et hierarki der man delegerer oppgaver til å bli utført gjennom andre klasser som alle deler samme grensesnitt. Gjennom en slik teknikk vil man bruke en klasse bare til å kalle på metoder gjennom andre klasser. Dette er effektivt fordi et objekt benytter seg av et annet objekt for å utføre en del av en tjeneste.
+
+
+Observatør-observert-teknikken:
+I et program som implementerer observatør-observert-teknikken vil vi ha objekter som blir observert og objekter som observerer dem. De observerte objektene må ha gettere/settere, kunne endres utenfra og si ifra om endringer til observatørene. Observatørene skal ta i mot disse beskjedene. Slik får vi et innkapslet og effektivt samspill mellom objektene.
+

@@ -1,0 +1,37 @@
+Hva er en synlighetsmodifikator?
+
+- En synlighetsmodifikator er en mekanisme som deklarerer hvilke navn som skal være 		synlige eller ikke (offentlige/private).
+
+
+Hva er forskjellen på private og public og når brukes de?
+
+- Private attributter må hentes ut gjennom gettere, mens public kan brukes i andre 		klasser. Grunnregelen er at attributter er private, mens operasjoner er 		offentlige.
+
+
+Account:
+
+Forklar hvorfor metodene over kan sies å være en komplett innkapsling av tilstanden.
+
+- Metodene kan sies å være en komplett innkapsling av tilstanden fordi all data metodene 	tar inn er private.
+
+
+Er denne klassen data-orientert eller tjeneste-orientert? Begrunn svaret!
+
+- data-orientert: huske/håndtere data --> gettere/settere, tjeneste-orientert: beregninger/operasjoner på data utenfor objektet.
+- Account-klassen er mest data-orientert fordi den har gettere/settere som påvirker 		tilstanden av account-objektet. Metodene deposit, withdraw og addInterest påvirker 	objektet direkte ved å bruke getterne for å få informasjonen de trenger.
+- Account-klassen kan også være tjeneste-orientert, ettersom den regner ut interest raten 	utenfor objektet ved getterne getBalance og getInterestRate. 
+
+
+Person:
+
+Foreslå en alternativ innkapsling av navnet.
+
+- En alternativ innkapsling av navnet kunne vært å ha separate attributter for hver verdi, 	framfor å ha begge i én verdi slik koden er nå. Slik de er nå har vi to 		forskjellige verdier (fornavn, etternavn) i en sammelagt verdi --> navn. Vi kunne 	laget to forskjellige verdier og dermed gettere og settere for fornavn og 		etternavn.
+
+
+Foreslå to alternative strategier for å kapsle inn tilstand som er koblet slik navn og e-post er.
+
+- navn og e-post-verdiene henger sammen gjennom at e-posten må være identisk navnet, bare 	med "." som skille, ikke " ". Én stategi kunne vært på kapsle dem inn samtidig, 	altså ha én getter/setter for verdiene. En annen kunne vært å ha dem hver for seg, 	slik det er i koden nå.
+
+
+
